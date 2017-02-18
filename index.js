@@ -2,7 +2,7 @@ const Botkit = require('botkit');
 
 const controller = Botkit.slackbot({debug: true});
 
-const bot = controller.spawn({token: process.env.token}).startRTM();
+const bot = controller.spawn({token: process.env.slackToken}).startRTM();
 
 controller.hears(
 	['hello', 'hi'],
